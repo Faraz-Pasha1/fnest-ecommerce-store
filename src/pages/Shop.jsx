@@ -125,7 +125,7 @@ const Shop = () => {
 
       {/* Product Grid */}
       <section className="py-8">
-        <div className="w-full px-1 md:px-[60px] max-w-[1800px] mx-auto">
+        <div className="w-full px-1 md:px-[30px] max-w-[1800px] mx-auto">
           <div className="flex items-center justify-between mb-4">
             <p className="text-gray-400 text-[10px] uppercase tracking-widest">Showing {filteredProducts.length} Results</p>
           </div>
