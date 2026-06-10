@@ -61,7 +61,7 @@ const SplitSection2 = () => {
   const title = "Purest Taste of Nature";
 
   return (
-    <section className="py-8 bg-white overflow-hidden">
+    <section className="py-4 bg-white overflow-hidden">
       <div className="w-full px-2 md:px-[60px] mx-auto space-y-0">
         <div className="relative w-full h-[110px] md:h-[260px] overflow-hidden group rounded-t-xl">
           <img
