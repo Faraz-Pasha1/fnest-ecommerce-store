@@ -45,7 +45,7 @@ const Blog = () => {
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-green-400 text-[24px] uppercase tracking-[0.5em] font-bold mb-6"
+            className="text-green-400 text-sm md:text-[24px] uppercase tracking-[0.3em] md:tracking-[0.5em] font-bold mb-4 md:mb-6"
           >
             Best Collection 
           </motion.p>
@@ -71,7 +71,7 @@ const Blog = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 onClick={() => navigate(`/blog/${blog.id}`)}
-                className="group relative h-[400px] md:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
+                className="group relative h-[280px] md:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
               >
                 <img 
                   src={blog.image} 
@@ -87,7 +87,7 @@ const Blog = () => {
                       <span>{blog.date}</span>
                     </div> */}
                     
-                    <h2 className="text-2xl md:text-4xl font-playfair font-bold text-white leading-tight group-hover:translate-y-[-10px] transition-transform duration-700">
+                    <h2 className="text-lg md:text-4xl font-playfair font-bold text-white leading-tight group-hover:translate-y-[-10px] transition-transform duration-700">
                       {blog.title}
                     </h2>
                     

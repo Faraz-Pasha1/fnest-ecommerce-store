@@ -88,10 +88,10 @@ const QuickViewModal = () => {
 
             {/* Right: Details */}
             <div className="w-full md:w-1/2 p-4 md:p-12 flex flex-col justify-start">
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 <div>
-                  <h3 className="text-[28px] md:text-3xl font-playfair font-bold text-dark-gray mb-2">{quickViewProduct.title}</h3>
-                  <p className="text-olive-green text-[14px] md:text-sm uppercase tracking-widest font-semibold">{quickViewProduct.subtitle || 'Premium Collection'}</p>
+                  <h3 className="text-xl md:text-3xl font-playfair font-bold text-dark-gray mb-1 md:mb-2">{quickViewProduct.title}</h3>
+                  <p className="text-olive-green text-xs md:text-sm uppercase tracking-widest font-semibold">{quickViewProduct.subtitle || 'Premium Collection'}</p>
                 </div>
 
                 <div className="flex items-center space-x-4">

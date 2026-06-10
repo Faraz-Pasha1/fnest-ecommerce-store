@@ -7,7 +7,19 @@
 :root {
   font-family: 'Poppins', sans-serif;
   background-color: #FAFAFA;
-  font-size: 18px; /* Increased base size */
+  font-size: 14px; /* mobile base */
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 16px; /* tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    font-size: 18px; /* desktop */
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

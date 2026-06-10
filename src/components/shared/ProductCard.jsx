@@ -39,7 +39,7 @@ const ProductCard = ({ product }) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="product-card group border border-dark-gray/10 overflow-hidden bg-white shadow-sm hover:border-royal-blue/30 transition-all duration-500 flex flex-col h-[400px] md:h-full"
+      className="product-card group border border-dark-gray/10 overflow-hidden bg-white shadow-sm hover:border-royal-blue/30 transition-all duration-500 flex flex-col"
     >
       <Link to={`/product/${product.id}`} className="relative aspect-square overflow-hidden bg-premium-bg flex-shrink-0 block">
         {/* Hover (secondary) image — sits beneath, always visible */}
@@ -79,14 +79,14 @@ const ProductCard = ({ product }) => {
       <div className="p-4 space-y-3 flex flex-col flex-grow">
         <div className="flex flex-col space-y-1">
           <Link to={`/product/${product.id}`}>
-            <h3 className="text-[14px] md:text-sm font-medium font-poppins text-dark-gray group-hover:text-royal-blue transition-colors duration-300 line-clamp-2 leading-snug">
+            <h3 className="text-xs sm:text-sm font-medium font-poppins text-dark-gray group-hover:text-royal-blue transition-colors duration-300 line-clamp-2 leading-snug">
               {product.title}
             </h3>
           </Link>
           <div className="flex items-center space-x-2 pt-1">
-            <p className="text-[12px] md:text-lg font-semibold text-dark-gray">Rs. {currentPrice}</p>
+            <p className="text-sm sm:text-base font-semibold text-dark-gray">Rs. {currentPrice}</p>
             {product.wasPrice && (
-              <p className="text-[10px] md:text-xs text-gray-400 line-through">Rs. {product.wasPrice}</p>
+              <p className="text-[10px] sm:text-xs text-gray-400 line-through">Rs. {product.wasPrice}</p>
             )}
           </div>
         </div>

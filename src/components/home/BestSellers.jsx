@@ -99,10 +99,10 @@ const BestSellers = () => {
   return (
     <section className="py-16 bg-white">
       <div className="w-full mx-auto px-2 md:px-[60px]">
-        <div className="text-center mb-12">
-          <p className="text-olive-green text-sm uppercase tracking-[0.4em] font-bold mb-4">Exclusive Edition</p>
-          <h2 className="text-2xl md:text-5xl font-playfair font-bold text-dark-gray">Our Best Selling Products</h2>
-          <div className="w-24 h-1 bg-royal-blue mx-auto mt-8" />
+        <div className="text-center mb-8 md:mb-12">
+          <p className="text-olive-green text-xs md:text-sm uppercase tracking-[0.4em] font-bold mb-3 md:mb-4">Exclusive Edition</p>
+          <h2 className="text-xl md:text-5xl font-playfair font-bold text-dark-gray">Our Best Selling Products</h2>
+          <div className="w-16 md:w-24 h-1 bg-royal-blue mx-auto mt-4 md:mt-8" />
         </div>
 
         <Swiper

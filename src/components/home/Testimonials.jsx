@@ -100,24 +100,24 @@ const Testimonials = () => {
         >
           {TESTIMONIALS.map((t) => (
             <SwiperSlide key={t.id} className="h-auto">
-              <div className={`text-center h-[320px] md:h-[450px] max-w-3xl mx-auto flex flex-col justify-between ${t.color} p-4 md:p-8 rounded-2xl shadow-xl transition-all duration-300`}>
-                <div className="flex justify-center mb-6">
+              <div className={`text-center min-h-[260px] md:h-[450px] max-w-3xl mx-auto flex flex-col justify-between ${t.color} p-3 md:p-8 rounded-2xl shadow-xl transition-all duration-300`}>
+                <div className="flex justify-center mb-2 md:mb-4">
                   <div className="flex space-x-1">
                     {[...Array(t.rating)].map((_, i) => (
-                      <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Star key={i} size={14} className="fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
                 </div>
-                <p className="text-[10px] md:text-[18px] font-playfair italic leading-relaxed mb-4 md:mb-8 text-gray-200 flex-grow">
+                <p className="text-[9px] sm:text-xs md:text-[18px] font-playfair italic leading-relaxed mb-3 md:mb-8 text-gray-200 flex-grow">
                   &ldquo;{t.comment}&rdquo;
                 </p>
                 <div className="flex flex-col items-center">
                   <img 
                     src={t.pic} 
                     alt={t.name} 
-                    className="w-[100px] md:w-[160px] h-[75px] md:h-[120px] rounded-lg border-2 border-white/20 mb-2 md:mb-4 object-cover shadow-md" 
+                    className="w-16 h-12 md:w-[160px] md:h-[120px] rounded-lg border-2 border-white/20 mb-1 md:mb-4 object-cover shadow-md" 
                   />
-                  <h4 className="text-[10px] md:text-base font-bold uppercase tracking-widest text-white">{t.name}</h4>
+                  <h4 className="text-[9px] sm:text-xs md:text-base font-bold uppercase tracking-widest text-white">{t.name}</h4>
                   {/* <p className="text-[10px] text-gray-400 uppercase tracking-widest mt-1">Verified Client</p> */}
                 </div>
               </div>

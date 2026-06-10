@@ -42,9 +42,9 @@ const About = () => {
       </section>
 
       {/* Brand Description Section */}
-      <section className="py-32 bg-white overflow-hidden">
+      <section className="py-10 md:py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <motion.div 
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -52,12 +52,12 @@ const About = () => {
               className="space-y-12"
             >
               <div>
-                <h2 className="text-2xl md:text-4xl font-playfair font-bold text-dark-gray mb-8 leading-tight">A Perfection of <span className="text-green-500">Natural sweetness, freshness, gifts, indulgence</span></h2>
-                <div className="w-24 h-1.5 bg-gray-700 mb-12" />
-                <p className="text-lg md:text-xl text-gray-500 leading-relaxed font-light">
+                <h2 className="text-xl md:text-4xl font-playfair font-bold text-dark-gray mb-4 md:mb-8 leading-tight">A Perfection of <span className="text-green-500">Natural sweetness, freshness, gifts, indulgence</span></h2>
+                <div className="w-16 md:w-24 h-1 md:h-1.5 bg-gray-700 mb-6 md:mb-12" />
+                <p className="text-sm md:text-xl text-gray-500 leading-relaxed font-light">
                   FNEST embodies a passion for premium, authentic products that bring joy and enhance everyday moments. From natural sweetness to thoughtful gifts, our curated collection reflects a commitment to quality, flavor, and the art of sharing happiness.
                 </p>
-                <p className="text-lg md:text-lg text-gray-400 leading-relaxed mt-8 font-light italic">
+                <p className="text-sm md:text-lg text-gray-400 leading-relaxed mt-4 md:mt-8 font-light italic">
                   "Perfection in every aspect of life, Natural sweetness, freshness, gifts, indulgence."
                 </p>
               </div>
@@ -135,13 +135,13 @@ const About = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-32 bg-white">
+      <section className="py-12 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-24">
             {/* Contact Information */}
             <div className="space-y-16">
               <div>
-                <h2 className="text-2xl md:text-4xl font-playfair font-bold text-green-400 mb-8">We'd love to hear from you.</h2>
+                <h2 className="text-xl md:text-4xl font-playfair font-bold text-green-400 mb-4 md:mb-8">We'd love to hear from you.</h2>
                 <p className="text-gray-500 text-lg leading-relaxed max-w-md">
                   Whether you have a question about our collections, need assistance with an order, or just want to say hello, our team is here for you.
                 </p>
@@ -266,7 +266,7 @@ const About = () => {
               <div key={product.id} className="relative overflow-hidden rounded-2xl group cursor-pointer shadow-lg bg-premium-bg border border-light-gray/20" style={{ aspectRatio: '1 / 1.1' }}>
                 <img src={product.image} alt={product.title} className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" />
                 <div className="absolute inset-0 p-4 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-white">
-                  <h3 className="text-[28px] font-playfair font-bold text-dark-gray mb-2">{product.title}</h3>
+                  <h3 className="text-lg md:text-2xl font-playfair font-bold text-dark-gray mb-2">{product.title}</h3>
                   <p className="text-[13px] text-gray-500 mb-3 line-clamp-5 leading-relaxed px-1">{product.description}</p>
                   <p className="text-royal-blue font-bold tracking-widest text-sm">Rs. {product.price}</p>
                 </div>

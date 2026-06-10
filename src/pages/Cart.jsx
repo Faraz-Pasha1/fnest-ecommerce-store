@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useShop } from '../context/ShopContext';
 import { Trash2, Plus, Minus, Send, ShoppingBag } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -98,9 +98,9 @@ const Cart = () => {
                       <div className="flex-grow min-w-0">
                         <div className="flex justify-between items-start gap-2">
                            <div className="min-w-0">
-                             <h3 className="text-[16px] md:text-sm md:text-base font-playfair font-bold text-dark-gray leading-tight">{item.title}</h3>
-                             <p className="text-[13px] md:text-sm text-gray-400 uppercase tracking-widest ">{item.code}</p>
-                             <p className="text-[14px] md:text-sm font-semibold text-dark-gray ">Rs. {item.price}</p>
+                             <h3 className="text-sm md:text-base font-playfair font-bold text-dark-gray leading-tight">{item.title}</h3>
+                             <p className="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest">{item.code}</p>
+                             <p className="text-sm font-semibold text-dark-gray">Rs. {item.price}</p>
                            </div>
                            <div className="flex items-center gap-3 flex-shrink-0">
                              <div className="flex items-center space-x-2 bg-white rounded-full px-3 py-1.5 shadow-sm border border-light-gray/10">
