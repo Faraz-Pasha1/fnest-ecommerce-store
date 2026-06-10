@@ -37,7 +37,7 @@ const Hero1 = () => {
               <div className="absolute inset-0 bg-cover bg-center block md:hidden" style={{ backgroundImage: `url(${slide.mobileUrl || slide.url})` }} />
               <div className="absolute inset-x-0 top-16 md:top-[30%] z-10 text-center px-2 flex justify-center">
                 <div className="bg-black/40 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/10 shadow-2xl inline-block">
-                  <h1 className="text-2xl md:text-4xl font-playfair font-medium text-white tracking-wider">{slide.title}</h1>
+                  <h1 className="text-2xl md:text-4xl font-playfair font-medium font-bold text-white tracking-wider">{slide.title}</h1>
                 </div>
               </div>
               <div className="absolute inset-x-0 bottom-40 md:bottom-24 z-10 flex justify-center px-4">

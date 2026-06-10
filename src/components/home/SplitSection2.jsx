@@ -86,7 +86,7 @@ const SplitSection2 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-[22px] md:text-4xl font-playfair font-bold text-white tracking-tight mb-1 md:mb-4"
+              className="text-xl md:text-4xl font-playfair font-bold text-white tracking-tight mb-1 md:mb-4"
             >
               {title}
             </motion.h3>
