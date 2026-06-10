@@ -108,7 +108,7 @@ const Testimonials = () => {
                     ))}
                   </div>
                 </div>
-                <p className="text-[10px] md:text-lg font-playfair italic leading-relaxed mb-4 md:mb-8 text-gray-200 flex-grow">
+                <p className="text-[10px] md:text-[18px] font-playfair italic leading-relaxed mb-4 md:mb-8 text-gray-200 flex-grow">
                   &ldquo;{t.comment}&rdquo;
                 </p>
                 <div className="flex flex-col items-center">
