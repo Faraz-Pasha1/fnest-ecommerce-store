@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FAFAFA;
+  font-size: 18px; /* Increased base size */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif; /* A beautiful aesthetic and luxurious font for headers */
+  letter-spacing: 0.05em;
+}
+
+@layer components {
+  .btn-premium {
+    @apply px-8 py-3 bg-green-700 text-white rounded-none transition-all duration-300 hover:bg-dark-gray hover:shadow-xl active:scale-95 uppercase tracking-widest text-[14px] md:text-sm font-semibold;
+  }
+  
+  .btn-outline {
+    @apply px-8 py-3 border border-green-700 text-green-700 rounded-none transition-all duration-300 hover:bg-green-700 hover:text-white uppercase tracking-widest text-sm font-semibold;
+  }
+
+  .nav-link {
+    @apply text-dark-gray hover:text-royal-blue transition-colors duration-300 font-medium relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-royal-blue after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .glass-nav {
+    @apply bg-white/80 backdrop-blur-md border-b border-light-gray/20 sticky top-0 z-50;
+  }
+
+  .product-card {
+    @apply bg-white p-1 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+  }
+}
+
+/* Custom Swiper Styles */
+.swiper-button-next, .swiper-button-prev {
+  @apply text-green-700 !important;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-green-700 !important;
+}
