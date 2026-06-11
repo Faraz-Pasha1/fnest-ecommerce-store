@@ -11,7 +11,7 @@ const PRODUCTS = [
     id: 3,
     title: "Classic Mukhwas",
     subtitle: "Daily Mouth Fresheners",
-    price: 210,
+    price: 220,
     wasPrice: 250,
     code: "FNP-206",
     description: "Essajee's Classic Mukhwas is a premium, traditional mouth freshener designed to aid digestion and naturally refresh the breath.",
