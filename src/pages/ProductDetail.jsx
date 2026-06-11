@@ -185,16 +185,16 @@ const ProductDetail = () => {
             <p className="text-royal-blue text-xs uppercase tracking-[0.3em] font-bold mb-2">
               {product.category}
             </p>
-            <h1 className="text-3xl md:text-5xl font-playfair font-bold text-dark-gray mb-4">
+            <h1 className="text-3xl md:text-4xl font-playfair font-bold text-dark-gray mb-4">
               {product.title}
             </h1>
             
             {/* Star Rating Removed */}
 
             <div className="flex items-center space-x-3 mb-6 border-b border-gray-100 pb-6">
-              <p className="text-3xl font-semibold text-dark-gray">Rs. {currentPrice}</p>
+              <p className="text-2xl font-semibold text-green-600">Rs. {currentPrice}</p>
               {product.wasPrice && (
-                <p className="text-xl text-gray-400 line-through">Rs. {product.wasPrice}</p>
+                <p className="text-lg text-gray-400 line-through">Rs. {product.wasPrice}</p>
               )}
             </div>
 
@@ -358,7 +358,7 @@ const ProductDetail = () => {
             {TRUST_BADGES.map((badge, idx) => {
               const Icon = badge.icon;
               return (
-                <div key={idx} className="flex flex-col items-center text-center p-3 md:p-4 bg-premium-bg rounded-xl border border-light-gray/10 hover:border-royal-blue/30 transition-colors cursor-default">
+                <div key={idx} className="flex flex-col items-center text-center p-3  bg-premium-bg rounded-xl border border-light-gray/10 hover:border-royal-blue/30 transition-colors cursor-default">
                   <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-3 md:mb-4 text-royal-blue">
                     <Icon className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
