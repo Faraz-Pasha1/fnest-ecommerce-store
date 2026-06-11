@@ -13,7 +13,7 @@ export const PRODUCTS1 = [
     id: 3,
     title: "Classic Mukhwas",
     subtitle: "Tradition in Every Bite",
-    price: 230,
+    price: 210,
     wasPrice: 250,
     code: "FNP-206",
     description: "Essajee's Classic Mukhwas is a premium, traditional mouth freshener designed to aid digestion and naturally refresh the breath.",
