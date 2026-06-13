@@ -158,7 +158,7 @@ const QuickViewModal = () => {
 
                     {displayIngredients.length > 0 && (
                       <div className="flex flex-col gap-1.5">
-                        <span className="text-sm text-gray-500 tracking-widest font-bold">Ingredients</span>
+                        <span className="text-sm text-gray-500 tracking-widest font-bold">{quickViewProduct.bagLabel || 'Ingredients'}</span>
                         <div className="flex flex-wrap gap-1.5">
                           {displayIngredients.map((tag, idx) => (
                             <span key={idx} className="inline-block px-3 py-1 bg-premium-bg border border-light-gray/20 text-[10px] text-dark-gray rounded-sm uppercase tracking-wider font-semibold cursor-default">

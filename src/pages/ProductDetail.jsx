@@ -262,7 +262,7 @@ const ProductDetail = () => {
 
               {displayIngredients.length > 0 && (
                 <div className="flex flex-col gap-2">
-                  <span className="text-sm text-gray-500 uppercase tracking-widest font-bold">Ingredients</span>
+                  <span className="text-sm text-gray-500 uppercase tracking-widest font-bold">{product.bagLabel || 'Ingredients'}</span>
                   <div className="flex flex-wrap gap-1.5">
                     {displayIngredients.map((tag, idx) => (
                       <span key={idx} className="inline-block px-3 py-1 bg-premium-bg border border-light-gray/20 text-[13px] text-dark-gray rounded-sm capitalize tracking-wider cursor-default">

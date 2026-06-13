@@ -21,6 +21,7 @@ export const PRODUCTS3 = [
     hoverImage: "/cardimages/fnest-gift-eid-wishes-surprise-bangel-opened-trending.webp",
     category: "Gifts-Bouquets",
     netWeight: "N/A",
+    bagLabel: "Items are",
     insideBag: "Jhumki / Earings, Tasbeeh Counter / Keychain, Choorian / Bangles, Catcher / Scrunchies, Chocolate (100 Rs), Cone Mehendi, Meetha Pan Masala Cone, Lights  .",
     bestUseFor: "Mothers day, Birthdays, Eid Gifts, Sisters Day, Friends Day, For Girls / ladies"
   },
@@ -36,6 +37,7 @@ export const PRODUCTS3 = [
     hoverImage: "/cardimages/fnest-gift-bouquet-celebrations-event-ocassions-paper-bag-opened-trending.webp",
     category: "Gifts-Bouquets",
     netWeight: "N/A",
+    bagLabel: "Items are",
     insideBag: "Mini Jewellery Box, Face Powder / other 1 items of cosmetic, Ladies Wallet, Body Spray / Perfume, Catcher / Keychain, Mini Handheld Fan.",
     bestUseFor: "Mothers day, Birthdays, Eid Gifts, Sisters Day, Friends Day, For Girls / ladies, Wedding Gift, Anniversary Gift, Valentine Gift, Mehandi Gift"
   },
@@ -51,6 +53,7 @@ export const PRODUCTS3 = [
     hoverImage: "/cardimages/fnest-gift-bouquet-celebrations-event-ocassions-trending-small-2nd.webp",
     category: "Gifts-Bouquets",
     netWeight: "N/A",
+    bagLabel: "Items are",
     insideBag: "Dairymilk (1), Kitkat (1),Snickers (1), Dubai Junafa (1), Twix (1), Ferrero Rocher (1)",
     bestUseFor: "Birthdays, Eid Gifts, Sisters Day, Friends Day, For Girls, Wedding Gift, Anniversary Gift, Valentine Gift.",
     hasVariants: true,
@@ -74,6 +77,7 @@ export const PRODUCTS3 = [
     hoverImage: "/cardimages/fnest-gift-toffee-bouquet-celebrations-event-ocassions-trending-2nd.webp",
     category: "Gifts-Bouquets",
     netWeight: "N/A",
+    bagLabel: "Items are",
     insideBag: "Dairymilk, Snickers, Kitkat, Twix, Masqara, Lip Gloss, Sponge, Eye Lashes, Catcher, Keychain, Jhumki",
     bestUseFor: "Birthdays, Eid Gifts, Sisters Day, Friends Day, For Girls, Wedding Gift, Anniversary Gift, Valentine Gift.",
     hasVariants: true,
@@ -97,6 +101,7 @@ export const PRODUCTS3 = [
     hoverImage: "/cardimages/fnest-gift-bouquet-celebrations-event-ocassions-trending.webp",
     category: "Gifts-Bouquets",
     netWeight: "N/A",
+    bagLabel: "Items are",
     insideBag: "customized according to customer requirements",
     bestUseFor: "Birthdays, Eid Gifts, Sisters Day, Friends Day, For Girls, Wedding Gift, Anniversary Gift, Valentine Gift.",
 
