@@ -16,7 +16,7 @@ const ProductDetail = () => {
 
   // In a real app, you'd fetch the product by ID here. 
   const foundProduct = ALL_PRODUCTS.find(p => p.id === parseInt(id));
-  
+
   const product = foundProduct || {
     id: parseInt(id) || 1,
     title: "Premium Product Name",
@@ -95,12 +95,12 @@ const ProductDetail = () => {
     }
   }, [product]);
 
-  const currentPrice = product.hasVariants && selectedType && product.variants.details[selectedType] 
-    ? product.variants.details[selectedType].price 
+  const currentPrice = product.hasVariants && selectedType && product.variants.details[selectedType]
+    ? product.variants.details[selectedType].price
     : product.price;
 
-  const currentItems = product.hasVariants && selectedType && product.variants.details[selectedType]?.items 
-    ? product.variants.details[selectedType].items 
+  const currentItems = product.hasVariants && selectedType && product.variants.details[selectedType]?.items
+    ? product.variants.details[selectedType].items
     : product.insideBag;
 
   const insideBagTags = currentItems ? currentItems.split(',').map(i => i.trim()) : [];
@@ -114,7 +114,7 @@ const ProductDetail = () => {
     : product.image;
 
   const [selectedImage, setSelectedImage] = useState(displayImage);
-  
+
   useEffect(() => {
     setSelectedImage(displayImage);
     window.scrollTo(0, 0);
@@ -134,7 +134,7 @@ const ProductDetail = () => {
   return (
     <div className="bg-white min-h-screen pt-24 pb-16">
       <div className="w-full px-[20px] md:px-[60px] max-w-[1800px] mx-auto">
-        
+
         {/* Breadcrumb / Back Link */}
         <Link to="/" className="inline-flex items-center text-gray-500 hover:text-royal-blue transition-colors mb-8 text-sm">
           <ArrowLeft size={16} className="mr-2" />
@@ -142,10 +142,10 @@ const ProductDetail = () => {
         </Link>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
-          
+
           {/* Images Section */}
           <div className="space-y-4">
-            <motion.div 
+            <motion.div
               key={selectedImage}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -160,11 +160,11 @@ const ProductDetail = () => {
                 </div>
               )}
             </motion.div>
-            
+
             {allImages.length > 1 && (
               <div className="flex gap-4 overflow-x-auto pb-2">
                 {allImages.map((img, idx) => (
-                  <button 
+                  <button
                     key={idx}
                     onClick={() => setSelectedImage(img)}
                     className={`w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden border-2 transition-all duration-300 ${selectedImage === img ? 'border-royal-blue' : 'border-transparent opacity-60 hover:opacity-100'}`}
@@ -177,7 +177,7 @@ const ProductDetail = () => {
           </div>
 
           {/* Details Section */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             className="flex flex-col py-4"
@@ -188,7 +188,7 @@ const ProductDetail = () => {
             <h1 className="text-3xl md:text-4xl font-playfair font-bold text-dark-gray mb-4">
               {product.title}
             </h1>
-            
+
             {/* Star Rating Removed */}
 
             <div className="flex items-center space-x-3 mb-6 border-b border-gray-100 pb-6">
@@ -206,7 +206,7 @@ const ProductDetail = () => {
                     <span className="text-xs text-gray-500 uppercase tracking-widest font-bold">Type</span>
                     <div className="flex flex-wrap gap-2">
                       {product.variants.types.map(type => (
-                        <button 
+                        <button
                           key={type}
                           onClick={() => setSelectedType(type)}
                           className={`text-xs uppercase tracking-widest px-4 py-2 border transition-colors ${selectedType === type ? 'border-royal-blue bg-royal-blue text-white shadow-md' : 'border-light-gray/30 text-dark-gray hover:border-royal-blue/50'}`}
@@ -222,7 +222,7 @@ const ProductDetail = () => {
                     <span className="text-xs text-gray-500 uppercase tracking-widest font-bold">SKU</span>
                     <div className="flex flex-wrap gap-2">
                       {product.variants.skus.map(sku => (
-                        <button 
+                        <button
                           key={sku}
                           onClick={() => setSelectedSku(sku)}
                           className={`text-xs uppercase tracking-widest px-4 py-2 border transition-colors ${selectedSku === sku ? 'border-royal-blue bg-royal-blue text-white shadow-md' : 'border-light-gray/30 text-dark-gray hover:border-royal-blue/50'}`}
@@ -317,7 +317,7 @@ const ProductDetail = () => {
             {/* Actions */}
             <div className="flex flex-row items-center gap-3">
               <div className="flex items-center bg-premium-bg border border-light-gray/20 h-14 shrink-0">
-                <button 
+                <button
                   onClick={() => setLocalQty(Math.max(0, localQty - 1))}
                   className="px-3 md:px-4 h-full text-gray-500 hover:text-royal-blue disabled:opacity-30 transition-colors"
                   disabled={localQty <= 0}
@@ -325,7 +325,7 @@ const ProductDetail = () => {
                   <Minus size={16} />
                 </button>
                 <span className="w-8 md:w-12 text-center font-bold text-dark-gray">{localQty}</span>
-                <button 
+                <button
                   onClick={() => setLocalQty(localQty + 1)}
                   className="px-3 md:px-4 h-full text-gray-500 hover:text-royal-blue transition-colors"
                 >
@@ -333,7 +333,7 @@ const ProductDetail = () => {
                 </button>
               </div>
 
-              <button 
+              <button
                 onClick={() => {
                   addToCart({ ...product, price: currentPrice, selectedType, selectedSku }, localQty === 0 ? 1 : localQty);
                   setLocalQty(0);
@@ -398,8 +398,8 @@ const ProductDetail = () => {
               </div>
               <div>
                 <label className="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-semibold">Your Name</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={commentName}
                   onChange={(e) => setCommentName(e.target.value)}
                   placeholder="John Doe"
@@ -409,7 +409,7 @@ const ProductDetail = () => {
               </div>
               <div>
                 <label className="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-semibold">Your Review</label>
-                <textarea 
+                <textarea
                   value={commentText}
                   onChange={(e) => setCommentText(e.target.value)}
                   placeholder="Share your thoughts about this product..."
@@ -418,7 +418,7 @@ const ProductDetail = () => {
                   required
                 ></textarea>
               </div>
-              <button 
+              <button
                 type="submit"
                 className="bg-royal-blue text-white px-8 py-3 rounded-lg uppercase tracking-widest text-sm font-semibold hover:bg-dark-gray transition-colors duration-300 shadow-md"
               >
@@ -432,15 +432,15 @@ const ProductDetail = () => {
             <h4 className="text-sm uppercase tracking-[0.2em] font-bold text-dark-gray mb-6">
               Reviews ({comments.length})
             </h4>
-            
+
             {comments.length === 0 ? (
               <p className="text-gray-500 text-sm italic">Be the first to review this product.</p>
             ) : (
               comments.map((comment) => (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  key={comment.id} 
+                  key={comment.id}
                   className="bg-white p-6 rounded-xl border border-light-gray/10 shadow-sm"
                 >
                   <div className="flex items-start justify-between mb-3">

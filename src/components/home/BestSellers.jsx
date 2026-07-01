@@ -41,7 +41,7 @@ const PRODUCTS = [
     id: 15,
     title: "Happy Birthday Mouth Freshener",
     subtitle: "Chocolate Balls Mouth Freshener",
-    price: 310,
+    price: 330,
     wasPrice: 350,
     code: "FNP-203",
     description: "Add a touch of celebration with Chakde Happy Birthday Mouth Freshner. Blend of chocolate flavor and other ingredients.",
